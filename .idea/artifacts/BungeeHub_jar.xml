@@ -4,7 +4,7 @@
     <root id="archive" name="BungeeHub.jar">
       <element id="module-output" name="BungeeHub" />
       <element id="file-copy" path="$PROJECT_DIR$/src/lobby.yml" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/bungee.yml" />
     </root>
   </artifact>
 </component>

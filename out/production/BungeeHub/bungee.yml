@@ -1,0 +1,5 @@
+name: BungeeHub
+description: Private bungee cord plugin for hub management
+version: 1.0
+author: Antwan
+main: net.antwan.bungeehub.Main

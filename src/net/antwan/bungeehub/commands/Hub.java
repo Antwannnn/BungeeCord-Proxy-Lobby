@@ -25,8 +25,13 @@ public class Hub extends Command {
             if(main.getProvidedConfigurations().get(0).getConfig().get("lobby") != null){
                 String serverPath = (String) main.getProvidedConfigurations().get(0).getConfig().get("lobby");
                 if(!serverPath.equals(null)){
-                    sender.sendMessage(new ComponentBuilder("Sending you to " + serverPath + "...").color(ChatColor.GOLD).create());
-                    sender.connect(ProxyServer.getInstance().getServerInfo(serverPath));
+                    if(!sender.getServer().getInfo().getName().equals(serverPath)){
+                        sender.sendMessage(new ComponentBuilder("Sending you to " + serverPath + "...").color(ChatColor.GOLD).create());
+                        sender.connect(ProxyServer.getInstance().getServerInfo(serverPath));
+                    } else{
+                        sender.sendMessage(new ComponentBuilder("You are already connected to this server !").color(ChatColor.RED).create());
+                    }
+
                 }
             } else{
                 sender.sendMessage(new ComponentBuilder("Unable to find lobby, please contact the administrator.").color(ChatColor.RED).create());

@@ -18,15 +18,15 @@ public class Main extends Plugin {
 
     @Override
     public void onEnable(){
-        getLogger().info("Test passed");
+        getLogger().info("Initializing...");
         lobbys = new ProvidedConfiguration(this, new Configuration(), "lobby.yml");
         ProxyServer.getInstance().getPluginManager().registerCommand(this, new Hub("hub", this));
-        ProxyServer.getInstance().getPluginManager().registerCommand(this, new SetHub("sethub", this));
+        ProxyServer.getInstance().getPluginManager().registerCommand(this, new SetHub("setproxyhub", this));
     }
 
     @Override
     public void onDisable(){
-        getLogger().info("Test passed for shut down");
+        getLogger().info("Shutting down");
     }
 
     public ArrayList<ProvidedConfiguration> getProvidedConfigurations(){

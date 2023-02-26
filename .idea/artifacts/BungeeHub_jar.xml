@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="BungeeHub:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop/BungeeServer/plugins</output-path>
+    <root id="archive" name="BungeeHub.jar">
+      <element id="module-output" name="BungeeHub" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/lobby.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/plugin.yml" />
+    </root>
+  </artifact>
+</component>

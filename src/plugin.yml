@@ -1,0 +1,21 @@
+name: BungeeHub
+description: Private bungee cord plugin for hub management
+version: 1.0
+author: Antwan
+main: net.antwan.bungeehub.Main
+command:
+  sethub:
+    description: Sets the hub to the current server, world and location of sender
+    aliases:
+      - sh
+      - bungeesh
+      - setlobby
+      - bungeesetlobby
+    permission: bh.sethub
+
+  hub:
+    description: Teleports the player to the server, world and location of the current hub
+    aliases:
+      - lobby
+      - spawn
+    permission: bh.hub
